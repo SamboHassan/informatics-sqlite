@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "informatics-conn",
+            "group": "my-group",
+            "database": "${workspaceFolder:informatics-sql}/informatics.db"
+        }
+    ]
+}
