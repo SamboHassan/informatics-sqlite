@@ -9,5 +9,6 @@ order by lastName desc;
 select *
 from persons
 where firstName in ('hansen', 'pettersen')
-select top 3 firstName
-from persons;
+select *
+from persons
+where firstName in ('Hansen', 'Pettersen')
