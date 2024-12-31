@@ -14,3 +14,14 @@ select InvoiceDate,
     END 'Purchase Type'
 from Invoice
 where "Purchase Type" = "Top Performer";
+SELECT InvoiceDate,
+    BillingCity,
+    Total,
+    CASE
+        WHEN Total < 2 THEN 'Baseline Purchase'
+        WHEN Total BETWEEN 2 AND 6.99 THEN 'Low Purchase'
+        WHEN Total BETWEEN 7 and 15 THEN 'Target Purchase'
+        ELSE 'Top Performer'
+    END 'Purchase Type'
+FROM Invoice
+WHERE "Purchase Type" = "Low Purchase";

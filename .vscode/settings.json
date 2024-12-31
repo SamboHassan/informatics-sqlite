@@ -7,5 +7,6 @@
             "group": "my-group",
             "database": "${workspaceFolder:informatics-sql}/informatics.db"
         }
-    ]
+    ],
+    "sqltools.useNodeRuntime": true
 }
